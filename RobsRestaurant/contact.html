@@ -1,0 +1,202 @@
+<!DOCTYPE html> 
+<!-- 
+	Name: Asa Linson
+	Date Created: 04/09/2019
+	Last Revised: 04/11/2019
+-->
+
+<html lang="en"> 
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<title>Contact Us</title>
+		
+		<!-- 
+		Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ 
+		-->
+		<link rel="stylesheet" 
+		href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+		crossorigin="anonymous"> 
+		<link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+		
+		<!--
+		IM Fell English font copied from http://fonts.google.com/
+		-->
+		<link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC" 
+		rel="stylesheet">
+	  
+		<style>
+			.font-weight-bold {
+				font-weight: bold;
+			}
+			
+			input[type=submit]:hover {
+				background-color: #f2eded;
+				color: #546a7b;
+			}
+
+			textarea {
+				width: 80%;
+				height: 100px;
+				padding: 12px 20px;
+				margin: 12px 0;
+				box-sizing: border-box;
+				border: 2px solid #0d1f2d;
+				border-radius: 3px;
+				background-color: #fff;
+				resize: none;
+			}
+		</style>
+		
+	</head>
+	
+	
+	<body>
+	
+		<!-- 
+		CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ 
+		-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+		crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
+		crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
+		crossorigin="anonymous"></script>
+		
+		<script>
+			function validateForm() {
+				var x1 = document.forms["commentForm"]["nameInput"].value;
+				var x2 = document.forms["commentForm"]["emailInput"].value;
+				var x3 = document.forms["commentForm"]["phoneInput"].value;
+				if (x1 == "") {
+					alert("Name must be filled out.");
+					return false;
+				} else if (x2 == "") {
+					alert("Email must be filled out.");
+					return false;
+				} else if (x3 == "") {
+					alert("Phone number must be filled out.");
+					return false;
+				} else {
+					alert("Required form inputs are valid. Thank you.");
+					return true;
+				}
+			}
+		</script>
+		
+		<noscript>
+			<div class="alert">
+				<span class="closebtn" onclick="this.parentElement.style.display='none';">
+					&times;</span> 
+				<strong>Warning!</strong> This site is optimized for JavaScript and may not
+				function properly with JavaScript disabled!
+			</div>
+		</noscript>
+		
+		<div class="container-fluid">
+		
+			<header>
+				<h1>Rob's Restaurant</h1>
+			</header>
+			
+			<nav>
+				<hr />
+				<p><a href="home.html" class="Button badge-pill">Home</a>
+				<a href="menu.html" class="Button badge-pill">Menu</a>
+				<a href="contact.html" class="Button badge-pill">Contact Us</a></p>
+				<hr />
+			</nav>
+
+			<br>
+
+			<form name="commentForm" onsubmit="return validateForm()">
+			
+				<div class="form-group row">
+					<label for="nameInput" class="font-weight-bold col-sm col-form-label">Name:</label>
+
+					
+					<div class="col">
+						<input type="text" name="nameInput" class="inputs" required />
+					</div>
+				</div>
+				
+				<div class="form-group row">
+					<label for="emailInput" class="font-weight-bold col-sm col-form-label">Email:</label>
+		
+					<div class="col">
+						<input type="text" name="emailInput" class="inputs" required />
+					</div>
+				</div>
+				
+				<div class="form-group row">
+					<label for="phoneInput" class="font-weight-bold col-sm col-form-label">Phone:</label>
+					
+					<div class="col">
+						<input type="text" name="phoneInput" class="inputs" required />
+					</div>
+				</div>
+				
+				<div class="form-group row">
+					<label for="purpose" class="font-weight-bold col-sm col-form-label">Reason for Inquiry:</label>
+					
+					<div class="col">
+						<select name="purpose" required>
+							<option value="Catering" selected>Catering</option>
+							<option value="Party">Private Party</option>
+							<option value="Comment">Feedback</option>
+							<option value="Misc">Other</option>
+						</select>
+					</div>
+				</div>
+				
+				<div class="form-group row">
+					<label for="messageHere" class="col-sm col-form-label">Additional Information:</label>
+					
+					<div class="col">
+						<textarea name="messageHere"></textarea>
+					</div>
+				</div>
+				
+				<div class="form-group row">
+					<label for="YN" class="col-sm col-form-label">Have you been to the restaurant?</label>
+					
+					<div class="col">
+						<input type="radio" name="YN" checked />No
+						<input type="radio" name="YN" />Yes
+					</div>
+				</div>
+				
+				<div class="form-group row">
+					<label for="myChoices" class="col-sm col-form-label">Best days to contact you:</label>
+					
+					<div class="col">
+						<input type="checkbox" name="myChoices" value="Mon" />M
+						<input type="checkbox" name="myChoices" value="Tue" />T
+						<input type="checkbox" name="myChoices" value="Wed" />W
+						<input type="checkbox" name="myChoices" value="Thu" />Th
+						<input type="checkbox" name="myChoices" value="Fri" />F
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<input type="submit"/>
+				</div>
+				
+			</form>
+
+			<br>
+
+			<footer>
+				<hr />
+				<p>115 S Main St, Henderson, Texas, 75652</p>
+				<p><ins>(903) 657-8853</ins></p>
+			</footer>
+		</div>
+    </body> 
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html> 
+<!-- 
+	Name: Asa Linson
+	Date Created: 04/09/2019
+	Last Revised: 04/11/2019
+-->
+
+<html lang="en"> 
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<title>Menu</title>
+		
+		<!-- 
+		Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ 
+		-->
+       <link rel="stylesheet" 
+	   href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+	   integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+	   crossorigin="anonymous"> 
+	   <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+	   
+	   <!--
+	   IM Fell English font copied from http://fonts.google.com/
+	   -->
+	   <link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC" 
+	   rel="stylesheet">
+	   
+	   		
+		
+		<style>
+			.menuName {
+				font-size: 1.5em;
+				font-family: 'IM Fell English SC', serif;
+				font-weight: bold;
+				background-color: #5B1503;
+				color: #20B2AA;
+			}
+			
+			th {
+				background-color: #5B1503;
+				font-family: 'IM Fell English SC', serif;
+				color: #20B2AA;
+				font-size: 1.5em;
+			}
+			td {
+				border-bottom: dashed;
+				border-bottom-color: darkred;
+				padding-top: 1em;
+			}
+		</style>
+
+	</head>
+	
+	
+	<body>
+	
+		<!-- 
+		CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ 
+		-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+		crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
+		crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
+		crossorigin="anonymous"></script>
+	
+		<noscript>
+			<div class="alert">
+				<span class="closebtn" onclick="this.parentElement.style.display='none';">
+					&times;</span> 
+				<strong>Warning!</strong> This site is optimized for JavaScript and may not
+				function properly with JavaScript disabled!
+			</div>
+		</noscript>
+	
+		<div class="container-fluid">
+	
+        <header>
+            <h1>Rob's Restaurant</h1>
+        </header>
+
+        <nav>
+			<hr />
+			<p><a href="home.html" class="Button badge-pill">Home</a>
+			<a href="menu.html" class="Button badge-pill">Menu</a>
+			<a href="contact.html" class="Button badge-pill">Contact Us</a></p>
+			<hr />
+		</nav>
+		
+			
+			<div class="row">
+				<div class="col">
+					<p class="menuName">Burger and Fries</p>
+					An American Classic!<br>
+					Your choice - with or without cheese<br>
+					Pickle, onion, tomato, and lettuce<br>
+					Served with our famous thick cut<br>
+					french fries<br>
+					$7.95<br>
+				</div>
+				<div class="col">
+					<p class="menuName">Hot Dog and Chips</p>
+					A Summer Classic!<br>
+					Your choice - white or wheat bun<br>
+					Relish, mustard, and ketchup<br>
+					Served with our house-made chips<br>
+					$7.95<br>
+				</div>
+				<div class="col">
+					<p class="menuName">Italian Sausage and Peppers</p>
+					An All-Time Favorite!<br>
+					Your choice - mild or spicy Cole Slaw<br>
+					Served with garlic mashers<br>
+					$10.95<br>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col">
+					<p class="menuName">Tenderloin Sandwich and Chips</p>
+					Really Hits the Spot!<br>
+					Plain or Sesame Seed Bun<br>
+					Pickle, onion, tomato, and lettuce<br>
+					Served with our house-made chips<br>
+					$8.95<br>
+				</div>
+				<div class="col">
+					<p class="menuName">House Salad</p>
+					On The Lighter Side<br>
+					Your choice - with or without cheese<br>
+					Iceberg lettuce, tomatoes, peppers<br>
+					Thousand Island or Ranch<br>
+					Dressing Served with a dinner roll<br>
+					$6.95<br>
+				</div>
+				<div class="col">
+					<p class="menuName">Brisket Sandwich and Fries</p>
+					A Taste of Texas!<br>
+					Smoked Brisket on thick-cut<br>
+					Texas Toast<br>
+					Cole Slaw<br>
+					Served with our famous thick-cut<br>
+					french fries<br>
+					$7.95<br>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col">
+				<table width=100%>
+					<tr>
+						<th colspan="2">
+							<p>Beverages</p>
+						</th>
+					</tr>
+					
+					<tr>
+						<td style="text-align: center">
+							<p>Root Beer</p>
+						</td>
+						<td style="text-align: left">
+							<p>$3.00</p>
+						</td>					
+					</tr>
+					
+					<tr>
+						<td style="text-align: center">
+							<p>Bottled Water</p>
+						</td>
+						<td style="text-align: left">
+							<p>$1.25</p>
+						</td>					
+					</tr>
+					
+					<tr>
+						<td style="text-align: center">
+							<p>Lemonade</p>
+						</td>
+						<td style="text-align: left">
+							<p>$1.00</p>
+						</td>					
+					</tr>
+					
+					<tr>
+						<td style="text-align: center">
+							<p>Iced Tea</p>
+						</td>
+						<td style="text-align: left">
+							<p>$1.25</p>
+						</td>					
+					</tr>
+				</table>
+				</div>
+			</div>
+
+        <footer>
+			<hr />
+			<p>115 S Main St, Henderson, Texas, 75652</p>
+			<p><ins>(903) 657-8853</ins></p>
+        </footer>
+		
+		</div>
+    </body> 
+</html>

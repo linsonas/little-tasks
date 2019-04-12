@@ -1,0 +1,74 @@
+/*
+Name: Asa Linson
+Date created: 04/09/2019
+Last revised: 04/11/2019
+*/
+
+body {
+	background-color: darkseagreen;
+	font-family: verdana, helvetica, sans-serif;
+	color: #860000;
+	text-align: center;
+}
+
+.alert {
+  padding: 20px;
+  background-color: yellow;
+  color: black;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+header {
+	background-color: #5B1503;
+	font-family: 'IM Fell English SC', serif;
+	color: #20B2AA;
+}
+
+nav .Button {
+	background-color: darkseagreen;
+	border: solid;
+}
+
+a {
+	font-family: palatino;
+	text-decoration: underline;
+	font-weight: none;
+}
+
+a:link {
+	color: teal;
+}
+
+a:visited {
+	color: darkred;
+}
+
+a:hover {
+	text-decoration: bold;
+	color: indigo;
+}
+
+a:active {
+	text-decoration:none;
+	color: darkviolet;
+}
+
+footer {
+	background-color: #5B1503;
+	font-family: 'IM Fell English SC', serif;
+	color: #20B2AA;
+}

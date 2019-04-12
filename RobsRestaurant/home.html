@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<!-- 
+	Name: Asa Linson
+	Date Created: 04/09/2019
+	Last Revised: 04/11/2019
+-->
+
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<title>Rob's Restaurant Home Page</title>
+		
+		<!-- 
+		Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ 
+		-->
+       <link rel="stylesheet" 
+	   href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+	   integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+	   crossorigin="anonymous"> 
+	   <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+	   
+	   <!--
+	   IM Fell English font copied from http://fonts.google.com/
+	   -->
+	   <link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC" 
+	   rel="stylesheet">
+	   
+	   <style>
+			.jumbotron {
+				background-color: saddlebrown;
+				color: darkseagreen;
+				background-image: url("jumboBG.jpg");
+			}
+			h4 {
+			color: cyan;
+			}
+		</style>
+	</head>
+	
+	
+	<body>
+	
+		<!-- 
+		CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ 
+		-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+		crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
+		crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
+		crossorigin="anonymous"></script>
+	
+	<noscript>
+		<div class="alert">
+			<span class="closebtn" onclick="this.parentElement.style.display='none';">
+				&times;</span> 
+			<strong>Warning!</strong> This site is optimized for JavaScript and may not
+			function properly with JavaScript disabled!
+		</div>
+	</noscript>
+	
+	<div class="container-fluid">
+		<main>
+		
+			<header>
+				<h1>Rob's Restaurant</h1>
+				
+				<div class="jumbotron">
+					<h1>We're opening a new location!</h1>
+				</div>
+			</header>
+			
+			<nav>
+				<hr />
+				<p><a href="home.html" class="Button badge-pill">Home</a>
+				<a href="menu.html" class="Button badge-pill">Menu</a>
+				<a href="contact.html" class="Button badge-pill">Contact Us</a></p>
+				<hr />
+			</nav>
+			
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner">
+
+					<div class="carousel-item active">
+						<img src="CarouselBG.jpg">
+						<div class="carousel-caption">
+							<h4>We're opening a new location!</h4>
+						</div>
+					</div>
+
+					<div class="carousel-item">
+						<img src="CarouselBG.jpg">
+						<div class="carousel-caption">
+							<h4>We're rolling out our seasonal menu, <br>
+							with special options for this season.</h4>
+						</div>
+					</div>
+
+					<div class="carousel-item">
+						<img src="CarouselBG.jpg">
+						<div class="carousel-caption">
+							<h4>The Drink of the Month is SG Special Brew.</h4>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			
+			<br><hr><br>
+
+			<div class="row">
+				<div class="col">
+					<figure><img 
+					src="RobsTable.jpg" 
+					alt="Photo of a table in Rob's Restaurant"
+					class="img-fluid"
+					style="width=400px; height=150px;" /></figure>
+				</div>
+			</div>
+			
+			<!--
+			Image above is a public domain image from PublicDomainArchive.com edited 
+			by Asa Linson to be the correct size.
+			-->
+			
+			<br>
+			
+			<div>
+				<h3>Serving You Since 1992!</h3>
+				<p>Right in the beating heart of downtown Henderson, 
+				Rob's Restaurant is ready to excite and amaze with their 
+				famous brisket sandwich or their handmade Italian sausage!<br>
+				Come on down and see what all the fuss is about with Rob's 
+				world-class family recipes.<br>
+				Like us on <a href="http://www.facebook.com">Facebook</a> to 
+				get a free drink with your meal!</p>
+			</div>
+			
+			<footer>
+				<hr />
+				<p>115 S Main St, Henderson, Texas, 75652</p>
+				<p><ins>(903) 657-8853</ins></p>
+			</footer>
+			
+		</main>
+		
+	</div>
+	
+	</body>
